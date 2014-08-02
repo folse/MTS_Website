@@ -201,7 +201,7 @@ hr.soften2 {
 	width: 100%;
 }
 .show-case-item {
-	margin-top: -40px;
+	margin-top: -10px;
 }
 #nav-header {
 	position: absolute;
@@ -274,7 +274,7 @@ hr.soften2 {
 /* Masthead (docs home)
 ------------------------- */
 .masthead {
-	padding: 20px 0 244px;
+	padding: 20px 0 124px;
 	margin-bottom: 0;
 	color: #fff;
 	margin-top: 0px;
