@@ -35,13 +35,8 @@
             <div class="nav-collapse collapse">
               <ul class="nav">
                 <li class="active"><a href="index.html">Home</a> </li>
-                <li class="dropdown"><a href="javascript:" class="dropdown-toggle" data-toggle="dropdown"> Pages <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="components.html">Components</a></li>
-                  </ul>
-                </li>
+                <li><a href="app.html">Product</a> </li>
+                <li><a href="contact.html">Contact</a> </li>
                 <li><a href="http://blog.mtscandic.com" target="_blank">Blogg</a> </li>
               </ul>
             </div>
@@ -58,7 +53,7 @@
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
-    <div id="abc"><a class="bigbtn">Mer info</a></div>
+    <a id="introduction" class="bigbtn" >Mer info</a>
     <div class="clearfix"> </div>
   </div>
   <div class="container show-case-item">
@@ -74,7 +69,7 @@
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
-    <a href="#abc$(“html,body”).animate({scrollTop:$(“#box”).offset().top},1000)" class="bigbtn">Mer info</a>
+    <a id="introduction3" class="bigbtn" >Mer info</a>
     <div class="clearfix"> </div>
   </div>
 <!--
@@ -87,8 +82,8 @@
   </div>
 -->
 </div>
-<div class="container">
-  <div class="marketing" id="#abc">
+<div class="container" id="intro">
+  <div class="marketing">
     <h1>Motion Touch Sandinavia</h1>
     <p class="marketing-byline"> See more below.</p>
     <hr class="soften">
@@ -99,7 +94,7 @@
         
         Vi är två motiverade och passionerade entreprenörer som vill göra saker enkla, vi märkte att många butiker inte fanns online.
         
-        Trenden framöver är att mobilt internetanvändande kommer bli mer vanligt än laptop och pc...
+        Trenden framöver är att mobilt internetanvändande kommer bli mer vanligt än laptop och
         </p>
       </div>
       <div class="span4"> <img src="assets/img/think-creative.png" alt="Think Creative">
@@ -171,16 +166,19 @@
     </div>
     <hr class="soften1">
     <div class="row-fluid">
-      <div class="span3">
-        <h4>Navigation</h4>
-        <ul class="footer-links">
-          <a href="#">Home</a>
-        </ul>
-      </div>
+	  <div class="span3">
+	    <h4>Navigation</h4>
+	    <ul class="footer-links">
+	      <a href="#">Home</a>
+	    </ul>
+	    <ul class="footer-links">
+	      <a href="faq.html">FAQ</a>
+	    </ul>
+	  </div>
       <div class="span3 MT70">
-        <h4>Useful Links</h4>
+        <h4>Ours Links</h4>
         <ul class="footer-links">
-          <a href="#">eGrappler.com</a>
+          <a href="app.html">touchsweden.com</a>
         </ul>
       </div>
       <div class="span3 MT70">
@@ -315,19 +313,14 @@
 					$($obj).animate({scrollTop:to}, time);
 				}
 			});
-			$('#abc').click(function(){
-				var url = window.location.toString();
-				  var id = url.split(“#”)[1];
-				 if(id){
-				    var t = $(“#”+id).offset().top;
-				    $(window).scrollTop(t);
-				 } 
+			$('#introduction').click(function(){
+				$.goAnchor($('#intro').offset().top, 380);
 			});
 			$('#introduction2').click(function(){
-				 $('html,body').animate({scrollTop:$("#abc").offset().top},1000)
+				$.goAnchor($('#intro').offset().top, 380);
 			});
 			$('#introduction3').click(function(){
-				$.goAnchor($('#introduction3').offset().top, 200);
+				$.goAnchor($('#intro').offset().top, 380);
 			});
 		});
 	</script>
