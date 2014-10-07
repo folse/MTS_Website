@@ -361,7 +361,7 @@ hr.soften2 {
 .benefit {
 	background: url('../images/team_benefits_delimiter.png') no-repeat left bottom;
 	display: block;
-	padding: 1em 0;
+	padding: 1em 1em 1em 1em;
 }
 .benefit .first {
 	padding: 0.5em 0 1em 0;
@@ -374,7 +374,7 @@ hr.soften2 {
 }
 .benefit_text {
 	float: left;
-	width: 253px;
+	width: 383px;
 }
 .benefit_text div {
 	margin: 0;
@@ -383,7 +383,14 @@ hr.soften2 {
 	font-size: 13px;
 	margin: 0;
 }
-.perks-title { font-size:16px; font-weight:bold; }
+.perks-title { 
+	font-size:16px; 
+	font-weight:bold;
+	text-align: left;
+	width: 360px;
+	margin-top: 10px;
+	padding-left: 240px;
+}
 .flexible-hours {
 	background: url('../img/flexible-hours.png') no-repeat left 7px;
 }
