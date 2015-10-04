@@ -781,10 +781,20 @@ footer .copyright {
 	margin-bottom: 40px;
 }
 footer .contact {
+	float: right;
 	text-align: right;
 	border-bottom: 0px;
 	font-size: 1.0em;
 	margin-bottom: 40px;
+}
+
+footer .contact2{
+	float: right;
+	text-align: right;
+	border-bottom: 0px;
+	font-size: 1.0em;
+	margin-bottom: 40px;
+	margin-right: 100px;
 }
 .footer ul {
 	list-style: none;
