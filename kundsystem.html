@@ -34,7 +34,11 @@
           <div id="main-nav">
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="index.html">MTScandic</a> </li>
+                <li><a href="index.html">Huvudsida</a> </li>
+                <li><a href="app.html">Touch Sweden</a> </li>
+                <li class="active"><a href="kundsystem.html">Kundsystem</a> </li>
+                <li><a href="service.html">Tjänster</a> </li>
+                <li><a href="contact.html">Kontakt</a> </li>
               </ul>
             </div>
           </div>
@@ -62,7 +66,7 @@
 -->
 </div>
 <div class="container">
-  <div class="marketing" id="#abc">
+  <div class="marketing" id="intro">
     <h1>Kundsystem</h1>
     <p class="marketing-byline"> </p>
     <hr class="soften">
@@ -148,6 +152,25 @@
 <script src="assets/js/bootstrap-affix.js" type="text/javascript"></script> 
 <script src="assets/js/application.js" type="text/javascript"></script> 
 <script src="assets/js/superfish.js" type="text/javascript"></script> 
-<script src="assets/js/custom.js" type="text/javascript"></script> 
+<script src="assets/js/custom.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $.extend({
+        'goAnchor':function(to, time){
+          $obj = (window.opera)?(document.compatMode=="CSS1Compat"?$('html'):$('body')):$('html,body');
+          $($obj).animate({scrollTop:to}, time);
+        }
+      });
+      $('#introduction').click(function(){
+        $.goAnchor($('#intro').offset().top, 380);
+      });
+      $('#introduction2').click(function(){
+        $.goAnchor($('#intro').offset().top, 380);
+      });
+      $('#introduction3').click(function(){
+        $.goAnchor($('#intro').offset().top, 380);
+      });
+    });
+  </script>
 </body>
 </html>
